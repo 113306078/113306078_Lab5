@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/Lab5.css">
+</head>
+<body>
+	<h1>Enter Student Grades</h1>
+    <div class="input-form">
+        <label for="mathGrade">Math Grade:</label>
+        <input type="number" id="mathGrade" class="grade-input" min="0" max="100">
+
+        <label for="englishGrade">English Grade:</label>
+        <input type="number" id="englishGrade" class="grade-input" min="0" max="100">
+
+        <button onclick="submitGrades()">Submit</button>
+    </div>
+
+    <h2>Grades Table</h2>
+    <table id="gradesTable">
+        <thead>
+            <tr>
+                <th>Math</th>
+                <th>English</th>
+                <th>Average</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="mathAverage">Math Average: 0</td>
+                <td id="englishAverage">English Average: 0</td>
+                <td id="overallAverage">Total Average: 0</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script type="text/javascript" src="Lab5.js"></script>
+</body>
+</html>
